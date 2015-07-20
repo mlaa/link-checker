@@ -1,0 +1,74 @@
+// Tables
+
+table {
+  border: 0;
+  border-bottom: 2px solid $table-border-color;
+  width: 100%;
+}
+
+thead {
+
+  border-bottom: 2px solid $table-border-color;
+
+  @media print {
+    display: table-header-group;
+  }
+
+}
+
+td,
+th {
+
+  border: 0;
+  padding: 3px 1.25em 3px 0;
+  text-align: left;
+
+  @media print {
+    page-break-inside: avoid;
+  }
+
+}
+
+th {
+  background-color: $table-background-color;
+  font-weight: $text-bold;
+  text-align: left;
+}
+
+// Sorting
+
+.sort-header {
+
+  cursor: pointer;
+
+  &::selection {
+    background: transparent;
+  }
+
+}
+
+.sort-header:after {
+  border-color: $black transparent;
+  border-style: solid;
+  border-width: 0 6px 8px;
+  content: '';
+  float: right;
+  margin-top: 0.5em;
+  visibility: hidden;
+}
+
+.sort-header:hover:after {
+  visibility: visible;
+}
+
+.sort-up:after,
+.sort-down:after,
+.sort-down:hover:after {
+  opacity: 0.4;
+  visibility: visible;
+}
+
+.sort-up:after {
+  border-bottom: 0;
+  border-width: 8px 6px 0;
+}

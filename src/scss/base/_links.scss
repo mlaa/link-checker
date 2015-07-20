@@ -1,0 +1,23 @@
+// Links
+
+a {
+
+  color: $page-link-color;
+  text-decoration: underline;
+  word-wrap: break-word;
+
+  &:hover {
+    color: $page-link-hover-color;
+  }
+
+  // Don't break long URLs
+  @media only screen and (min-width: $breakpoint-medium-min-width) {
+    word-wrap: normal;
+  }
+
+}
+
+header a,
+nav a {
+  text-decoration: none;
+}

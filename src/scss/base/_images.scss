@@ -1,0 +1,10 @@
+// Images
+
+img {
+
+  @media print {
+    max-width: 100%;
+    page-break-inside: avoid;
+  }
+
+}

@@ -1,0 +1,5 @@
+{
+  "autoprefix": "last 1 version",
+  "source": "src/scss/main.scss",
+  "target": "build/"
+}

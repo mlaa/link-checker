@@ -1,0 +1,13 @@
+// Block elements
+
+p {
+
+  margin: 1em 0;
+  padding: 0;
+
+  @media print {
+    orphans: 3;
+    widows: 3;
+  }
+
+}

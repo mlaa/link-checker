@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Link Checker</title>
+
+    <!-- Bundled CSS -->
+    <link rel="stylesheet" href="build/main.css">
+    <!-- End Bundled CSS -->
+
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <header class="masthead">
+      <h1>Link Checker</h1>
+    </header>
+
+    <section class="container content">
+      <article class="page">
+
+        <p>Upload a CSV file containing URLs and this tool will generate a sortable table that reports the status (HTTP response code) of each link. If a row contains more than one URL, only the first will be checked.</p>
+
+        <div class="alert notice hidden" id="my-warning">
+          <p>Please use a <strong>modern browser</strong>: Chrome, Firefox, or Internet Explorer 10+.</p>
+        </div>
+
+        <div class="alert warning hidden" id="my-errors"></div>
+
+        <div class="droppable" id="my-droppable">
+          <span>Drop a CSV file or click to upload.</span>
+          <input type="file" id="my-dropzone" name="files">
+        </div>
+
+        <div class="droppable accepted hidden" id="my-loading">
+          <span>Loading data, please be patient....</span>
+        </div>
+
+        <table id="my-table"></table>
+
+      </article>
+    </section>
+
+    <!-- Bundled JS -->
+    <script src="build/main.js"></script>
+    <!-- End Bundled JS -->
+
+  </body>
+
+</html>

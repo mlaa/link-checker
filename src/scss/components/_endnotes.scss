@@ -1,0 +1,46 @@
+// Endnotes
+
+// Colors
+$endnote-background-color: #69c;
+$endnote-background-hover-color: #7ad;
+$endnote-text-color: $white;
+$endnote-text-hover-color: $white;
+
+.footnotes {
+
+  hr {
+    display: none;
+  }
+
+}
+
+sup {
+  font-size: 0.8em;
+  font-weight: $text-bold;
+  line-height: 0;
+}
+
+sup a,
+[rel='footnote'],
+[rev='footnote'] {
+
+  background-color: $endnote-background-color;
+  border-radius: 5px;
+  color: $endnote-text-color;
+  display: inline-block;
+  line-height: 1.2em;
+  margin: 0 2px;
+  padding: 2px 5px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $endnote-background-hover-color;
+    color: $endnote-text-hover-color;
+  }
+
+}
+
+[rev='footnote'] {
+  padding-bottom: 0;
+  padding-top: 3px;
+}

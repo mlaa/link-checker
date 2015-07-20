@@ -1,0 +1,46 @@
+$missing-background-color: #ff0;
+$good-background-color: #cfc;
+$redirect-background-color: #fc6;
+$error-background-color: #f99;
+
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.masthead h1 {
+  margin-top: 0;
+}
+
+td {
+  max-width: 800px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.missing {
+  td {
+    background-color: $missing-background-color;
+  }
+}
+
+.status-2 {
+  td {
+    background-color: $good-background-color;
+  }
+}
+
+.status-3 {
+  td {
+    background-color: $redirect-background-color;
+  }
+}
+
+.status-4,
+.status-5,
+.status-n {
+  td {
+    background-color: $error-background-color;
+  }
+}

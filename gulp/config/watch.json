@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "files": [
+        "index.html"
+      ],
+      "tasks": "noop"
+    },
+    {
+      "files": [
+        "src/scss/**/*.scss"
+      ],
+      "tasks": [
+        "scss-lint",
+        "scss"
+      ]
+    },
+    {
+      "files": [
+        "src/js/**/*.js"
+      ],
+      "tasks": [
+        "js-lint",
+        "browserify"
+      ]
+    }
+  ]
+}

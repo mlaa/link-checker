@@ -1,0 +1,9 @@
+{
+  "options": {
+    "config": ".scss-lint.yml"
+  },
+  "source": [
+    "src/**/*.scss",
+    "!src/scss/vendor/**/*.scss"
+  ]
+}

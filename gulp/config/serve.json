@@ -1,0 +1,9 @@
+{
+  "browserSync": {
+    "notify": true,
+    "server": {
+      "baseDir": "./"
+    },
+    "startPath": "/"
+  }
+}

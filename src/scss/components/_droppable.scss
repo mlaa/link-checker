@@ -1,0 +1,46 @@
+// Droppable file targets
+
+// Colors
+$droppable-background-color: #eee;
+$droppable-border-color: #ccc;
+$droppable-border-color-active: #3c3;
+$droppable-text-color: #999;
+
+.droppable {
+
+  background-color: $droppable-background-color;
+  border: dashed 5px $droppable-border-color;
+  border-radius: 10px;
+  color: $droppable-text-color;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 2em 0;
+  padding: 4em 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  input {
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  &.accepted {
+    border-style: solid;
+  }
+
+  &.hover {
+    border-color: $droppable-border-color-active;
+    border-style: solid;
+    color: $black;
+  }
+
+}
