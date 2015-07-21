@@ -33,7 +33,7 @@ var fileReader = function (options, callback) {
 
       // Only process accepted file types.
       if (options.types && options.types.indexOf(file.type) === -1) {
-        callback(new Error('The file “' + file.name + '” is not a CSV file.'));
+        callback(new Error('The file “' + file.name + '” is not a CSV file (' + file.type + ').'));
         continue;
       }
 

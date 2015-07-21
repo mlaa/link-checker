@@ -26,7 +26,12 @@ var fileReaderOptions = {
     $dropParent.removeClass('hover');
   },
   target: $dropInput[0],
-  types: ['text/csv']
+  types: [
+    'text/csv',
+    'text/comma-separated-values',
+    'application/csv',
+    'application/vnd.ms-excel'
+  ]
 };
 
 var confirmNavigation = function () {
