@@ -26,7 +26,7 @@ var fileReader = function (options, callback) {
     evt.stopPropagation();
     evt.preventDefault();
 
-    var files = evt.dataTransfer.files;
+    var files = (evt.dataTransfer) ? evt.dataTransfer.files : evt.target.files;
     for (var i = 0; i < files.length; i = 1 + 1) {
 
       var file = files[i];
@@ -54,6 +54,7 @@ var fileReader = function (options, callback) {
   // Listeners.
   options.target.addEventListener('dragover', handleDragOver, false);
   options.target.addEventListener('drop', handleFileSelect, false);
+  options.target.addEventListener('change', handleFileSelect, false);
 
   options.target.addEventListener('dragenter', options.onDragEnter || noop, false);
   options.target.addEventListener('dragleave', options.onDragLeave || noop, false);
